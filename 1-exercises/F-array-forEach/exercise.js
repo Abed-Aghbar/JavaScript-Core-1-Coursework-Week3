@@ -7,7 +7,7 @@
   An array with numbers 1-15 has been provided.
 */
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+//var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 /* EXPECTED OUTPUT */
 
@@ -31,12 +31,12 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 arr.forEach((num) => {
-  if(num % 3 == 0){
+  if(num % 3 == 0 && num % 5 == 0){
+  console.log("FizzBuzz");
+  } else if(num % 3 == 0){
     console.log("Fizz");
   } else if(num % 5 == 0){
-    console.log("Fizz");
-  } else if(num % 3 == 0 && num % 5 == 0){
-    console.log("FizzBuzz");
+    console.log("Buzz");
   } else {
     console.log(num);
   }
